@@ -1,0 +1,135 @@
+/* Basic Reset & Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5; /* Light grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Login Container */
+.login-container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; 
+    box-sizing: border-box;
+    
+    margin: 20px;
+    
+}
+
+h2 {
+    text-align: center;
+    color: #1a2a4b;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+/* Input Group Styling */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 0.95em;
+    font-weight: bold;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccd0d5;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box
+    
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="password"]:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Light blue shadow */
+}
+
+.pop-up{
+    display: none;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: white;
+    padding: 20px;
+
+    border: 2px solid blue;
+    border-radius: 10px;
+
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+
+    z-index: 999;
+}
+
+/* Button Styling */
+button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff; 
+    
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Error Styling */
+.error-message {
+    color: #dc3545; 
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    display: none; /* Hidden by default, shown by JS */
+    padding: 8px;
+    border: 1px solid #f5c6cb;
+    background-color: #f8d7da;
+    border-radius: 5px;
+}
+
+/* footer */
+.form-footer {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.form-footer a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
